@@ -158,7 +158,7 @@ Automatické vykreslování
 Díky značkám `{input}` a `{label}` můžeme snadno vytvořit obecnou šablonu pro jakýkoliv formulář. Bude postupně iterovat a vykreslovat všechny jeho prvky, kromě hidden prvků, které se vykreslí automaticky při ukončení formuláře značkou `</form>`. Název vykreslovaného formuláře bude očekávat v proměnné `$form`.
 
 ```latte
-<form n:name=$form class=form>
+<form n:name=form class=form>
 	<ul class="errors" n:ifcontent>
 		<li n:foreach="$form->getOwnErrors() as $error">{$error}</li>
 	</ul>
